@@ -1,0 +1,16 @@
+node_modules/
+.DS_Store
+*.log
+page.html
+_mirror.js
+_invitestory.js
+_mandupp.js
+_batch3.js
+_wantnova.js
+_website15.js
+_kalyana.js
+_extract.py
+main/sample.html
+extra/_kalyana.html
+.cursor/
+agent-tools/

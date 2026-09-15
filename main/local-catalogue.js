@@ -1,0 +1,222 @@
+const LOCAL_DESIGNS = [
+  {
+    id: 6,
+    name: "Kalyana Mandapam",
+    image: "assets/preview/4.png",
+    tier: 1,
+    priceINR: 0,
+    priceUSD: 0,
+    demoUrl: "../extra/kalyana-mandapam/",
+    style: "Traditional Telugu",
+    accentColor: "#c2185b",
+    tags: ["traditional", "telugu", "south-indian", "mandapam", "our-picks"],
+    desc: "A majestic mandapam backdrop for South Indian rituals — colour, dignity, and sacred geometry.",
+    promise: "The sacred mandapam, brought to the screen."
+  },
+  {
+    id: 101,
+    name: "Burgundy Floral",
+    image: "../extra/burgundy-floral/wp-content/uploads/2026/08/Invitation-300x300.png",
+    tier: 1,
+    priceINR: 0,
+    priceUSD: 0,
+    demoUrl: "../extra/burgundy-floral/",
+    style: "Classic Floral",
+    accentColor: "#7a1f3d",
+    tags: ["traditional", "floral", "classic"],
+    desc: "Single-page traditional Indian invitation with countdown, events, and venue directions.",
+    promise: "Timeless and familiar."
+  },
+  {
+    id: 102,
+    name: "Pink Watercolor",
+    image: "assets/preview/5.png",
+    tier: 1,
+    priceINR: 0,
+    priceUSD: 0,
+    demoUrl: "../extra/pink-watercolor/",
+    style: "Watercolor Card",
+    accentColor: "#c97b93",
+    tags: ["traditional", "watercolor", "modern"],
+    desc: "Soft pink watercolor save-the-date with video, music, and a classic wedding itinerary.",
+    promise: "Gentle colour, clear details."
+  },
+  {
+    id: 109,
+    name: "Temple Scroll",
+    image: "assets/preview/5.png",
+    tier: 1,
+    priceINR: 0,
+    priceUSD: 0,
+    demoUrl: "../extra/temple-scroll/",
+    style: "Classic Scroll",
+    accentColor: "#a35d3a",
+    tags: ["traditional", "south-indian"],
+    desc: "A traditional single-page invitation with events, maps, and a ceremonial tone.",
+    promise: "Simple, sacred, and complete."
+  },
+  {
+    id: 103,
+    name: "Two Hearts",
+    image: "assets/preview/5.png",
+    tier: 1,
+    priceINR: 0,
+    priceUSD: 0,
+    demoUrl: "../extra/two-hearts/",
+    style: "Editorial Classic",
+    accentColor: "#8d6e4c",
+    tags: ["traditional", "modern", "south-indian"],
+    desc: "A story-in-two-hearts layout with couple portraits, events, countdown, and venue.",
+    promise: "Clean, warm, and easy to share."
+  },
+  {
+    id: 18,
+    name: "Ever After Bloom",
+    image: "assets/preview/16.png",
+    tier: 2,
+    priceINR: 0,
+    priceUSD: 0,
+    demoUrl: "../extra/ever-after-bloom/",
+    style: "Watercolor Garden",
+    accentColor: "#f06292",
+    tags: ["illustrated", "watercolor", "floral", "timeline", "our-picks"],
+    desc: "Hand-painted palace garden, wax-seal envelope, love-story chapters, and floating lanterns.",
+    promise: "Vibrant, floral, and deeply romantic."
+  },
+  {
+    id: 30,
+    name: "Lantern Madurai",
+    image: "assets/preview/30.png",
+    tier: 2,
+    priceINR: 0,
+    priceUSD: 0,
+    demoUrl: "../extra/lantern-madurai/",
+    style: "Madurai Temple Parallax",
+    accentColor: "#6b8e23",
+    tags: ["traditional", "south-indian", "lanterns", "parallax"],
+    desc: "Temple-city lanterns and illustrated Madurai atmosphere with a cinematic scroll.",
+    promise: "South Indian light, in motion."
+  },
+  {
+    id: 104,
+    name: "Nitin Weds Tanya",
+    image: "assets/preview/16.png",
+    tier: 2,
+    priceINR: 0,
+    priceUSD: 0,
+    demoUrl: "../extra/nitin-tanya/",
+    style: "Interactive Story",
+    accentColor: "#b08968",
+    tags: ["modern", "illustrated", "our-picks"],
+    desc: "Full interactive wedding website with events, gallery, and a tailored couple story.",
+    promise: "Your story, told in chapters."
+  },
+  {
+    id: 105,
+    name: "Arjun Preethi",
+    image: "assets/preview/16.png",
+    tier: 2,
+    priceINR: 0,
+    priceUSD: 0,
+    demoUrl: "../extra/arjun-preethi/",
+    style: "Interactive Story",
+    accentColor: "#c9a227",
+    tags: ["modern", "illustrated"],
+    desc: "A complete wedding microsite with celebrations, gallery, and guest-ready details.",
+    promise: "Polished, personal, and ready to share."
+  },
+  {
+    id: 21,
+    name: "Rajwada Royale",
+    image: "assets/preview/18.png",
+    tier: 3,
+    priceINR: 0,
+    priceUSD: 0,
+    demoUrl: "../extra/rajwada-royale/",
+    style: "Palace Doors",
+    accentColor: "#c09559",
+    tags: ["royal", "palace", "cinematic", "our-picks"],
+    desc: "Carved palace doors, shehnai ambience, and a royal illustrated inner court.",
+    promise: "An entrance guests will remember."
+  },
+  {
+    id: 33,
+    name: "Gilded Hall",
+    image: "assets/preview/33.png",
+    tier: 3,
+    priceINR: 0,
+    priceUSD: 0,
+    demoUrl: "../extra/gilded-hall/",
+    style: "Golden Hall Cinematic",
+    accentColor: "#c09559",
+    tags: ["royal", "cinematic", "palace"],
+    desc: "Golden hall, cinematic video opening, and ambient light rain.",
+    promise: "Grand halls and luxury motion."
+  },
+  {
+    id: 34,
+    name: "Slide to Shaadi",
+    image: "assets/preview/34.png",
+    tier: 3,
+    priceINR: 0,
+    priceUSD: 0,
+    demoUrl: "../extra/slide-to-shaadi/",
+    style: "Interactive Call",
+    accentColor: "#f57c00",
+    tags: ["quirky", "cinematic", "royal"],
+    desc: "Slide-to-answer call screen that opens into a lakeside golden-hour invitation.",
+    promise: "Answer the call of a lifetime."
+  },
+  {
+    id: 106,
+    name: "Royal Envelope",
+    image: "assets/preview/18.png",
+    tier: 3,
+    priceINR: 0,
+    priceUSD: 0,
+    demoUrl: "../extra/royal-envelope/",
+    style: "Wax Seal Reveal",
+    accentColor: "#b8860b",
+    tags: ["royal", "cinematic"],
+    desc: "Tap-to-open envelope experience with a full wedding website behind the seal.",
+    promise: "Open the seal. Enter the celebration."
+  },
+  {
+    id: 107,
+    name: "Raj Weds Divya",
+    image: "assets/preview/18.png",
+    tier: 3,
+    priceINR: 0,
+    priceUSD: 0,
+    demoUrl: "../extra/raj-divya/",
+    style: "Wax Seal Reveal",
+    accentColor: "#8b4513",
+    tags: ["royal", "traditional"],
+    desc: "Interactive envelope cover leading into a complete wedding itinerary.",
+    promise: "A ceremonial first impression."
+  },
+  {
+    id: 108,
+    name: "Kartik Weds Sadhna",
+    image: "assets/preview/33.png",
+    tier: 3,
+    priceINR: 0,
+    priceUSD: 0,
+    demoUrl: "../extra/kartik-sadhna/",
+    style: "Interactive Palace",
+    accentColor: "#7a3e1d",
+    tags: ["royal", "cinematic"],
+    desc: "A rich interactive wedding website with cinematic media and guest details.",
+    promise: "Luxury motion, family-ready details."
+  }
+];
+
+TEMPLATE_DATABASE.splice(0, TEMPLATE_DATABASE.length, ...LOCAL_DESIGNS);
+
+formatPrice = function () {
+  return "";
+};
+
+getItemPrices = function (item) {
+  return { priceINR: 0, priceUSD: 0, originalPriceINR: 0, originalPriceUSD: 0 };
+};
