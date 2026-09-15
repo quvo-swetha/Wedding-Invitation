@@ -1,5 +1,5 @@
 /*
- * InviteStory - Digital Wedding Card Templates Landing Page
+ * Quvo - Digital Wedding Card Templates Landing Page
  * Style: Luxury Boutique Directory (Alabaster Paper, Jewelry Engravings, Custom Checkmarks)
  */
 
@@ -964,6 +964,71 @@ a {
   height: 26px;
   width: auto;
   max-width: 130px;
+}
+
+.brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+  min-height: 44px;
+}
+
+.brand-mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  background: #1c3d32;
+  color: #f4efe4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-header), Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  flex-shrink: 0;
+}
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  gap: 2px;
+}
+
+.brand-name {
+  font-family: var(--font-header), Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1c3d32;
+  letter-spacing: -0.03em;
+}
+
+.brand-tag {
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6b7a73;
+}
+
+.brand-lockup-footer {
+  margin-bottom: 12px;
+}
+
+.brand-lockup-footer .brand-mark {
+  background: #f4efe4;
+  color: #1c3d32;
+}
+
+.brand-lockup-footer .brand-name {
+  color: #ffffff;
+}
+
+.brand-lockup-footer .brand-tag {
+  color: rgba(255, 255, 255, 0.62);
 }
 
 /* Hero Section */
@@ -2171,6 +2236,36 @@ body:has(#glass-luxury:checked) .catalogue-section {
   .logo-img {
     height: 22px;
     max-width: 100px;
+  }
+
+  .brand-mark {
+    width: 30px;
+    height: 30px;
+    font-size: 0.98rem;
+  }
+
+  .brand-name {
+    font-size: 1.05rem;
+  }
+
+  .brand-tag {
+    font-size: 0.52rem;
+  }
+
+  .header-bar {
+    padding: 10px 0;
+    padding-top: max(10px, env(safe-area-inset-top));
+  }
+
+  .hero-action-wrapper a,
+  .hero-primary-cta,
+  .hero-wa-cta {
+    min-height: 48px;
+  }
+
+  .floating-whatsapp {
+    bottom: max(88px, calc(env(safe-area-inset-bottom) + 76px));
+    right: max(14px, env(safe-area-inset-right));
   }
 
   .header-container {

@@ -1,5 +1,5 @@
 /**
- * InviteStory Simple Catalogue Directory
+ * Quvo Simple Catalogue Directory
  * Features: INR/USD Currency Toggle, Accordion Detail Expanders, Live Add-ons Price Calculator, and WhatsApp Order URL Generators.
  */
 
@@ -866,7 +866,7 @@ function renderCatalogue() {
 
     card.innerHTML = `
       <div class="template-card-media" data-preview-trigger="${item.id}" role="button" tabindex="0" title="Preview ${item.name}">
-        <img src="${imgSrc}" alt="InviteStory - ${item.name} Digital Wedding Invitation Template" class="template-card-img" loading="lazy" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <img src="${imgSrc}" alt="Quvo - ${item.name} Digital Wedding Invitation Template" class="template-card-img" loading="lazy" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
         <div class="template-card-fallback-initial" style="display: none;">${initial}</div>
         <div class="template-card-overlay" aria-hidden="true"></div>
       </div>
@@ -1034,8 +1034,8 @@ function buildWhatsAppMessage(id, includeAddons) {
   const tierName = item.tier === 1 ? "Classic" : item.tier === 2 ? "Premium" : "Luxury";
 
   let message = PROMO_CONFIG.active
-    ? `🇮🇳 *Hi InviteStory!* I would like to order *${item.name}* under the Independence Day Offer (Flat ₹815)!\n\n`
-    : `✨ *Hi InviteStory!* I would like to order the *${item.name}* invitation card.\n\n`;
+    ? `🇮🇳 *Hi Quvo!* I would like to order *${item.name}* under the Independence Day Offer (Flat ₹815)!\n\n`
+    : `✨ *Hi Quvo!* I would like to order the *${item.name}* invitation card.\n\n`;
 
   message += `💍 *Design:* ${item.name} (${tierName} Tier)\n`;
   message += `💰 *Total Price:* ${totalPriceText}`;
@@ -1090,7 +1090,7 @@ function orderCustomTemplate(id) {
   }
 
   const message = buildWhatsAppMessage(id, /* includeAddons */ true);
-  window.open(`https://wa.me/918281583882?text=${encodeURIComponent(message)}`, "_blank");
+  window.open(`https://wa.me/918903962685?text=${encodeURIComponent(message)}`, "_blank");
 }
 
 /**
@@ -1145,9 +1145,9 @@ function payRazorpayForTemplate(id) {
     key: window.RAZORPAY_KEY_ID || "rzp_live_YOUR_KEY_HERE",
     amount: amountInSubunits,
     currency: currencyCode,
-    name: "InviteStory",
+    name: "Quvo",
     description: `Digital Wedding Invitation - ${item.name}`,
-    image: "https://invitestory.in/logo/noappicon.png",
+    image: "logo/noappicon.png",
     notes: {
       template_name: item.name,
       template_id: String(item.id),
@@ -1170,8 +1170,8 @@ function payRazorpayForTemplate(id) {
 
       alert(`🎉 Payment Successful!\nPayment ID: ${response.razorpay_payment_id}\nTemplate: ${item.name}\n\nClick OK to open WhatsApp and send your wedding details for customization!`);
 
-      const waMsg = `Hi InviteStory! I have paid online for '${item.name}' (Payment ID: ${response.razorpay_payment_id}). Here are my wedding details:`;
-      window.open(`https://wa.me/918281583882?text=${encodeURIComponent(waMsg)}`, "_blank");
+      const waMsg = `Hi Quvo! I have paid online for '${item.name}' (Payment ID: ${response.razorpay_payment_id}). Here are my wedding details:`;
+      window.open(`https://wa.me/918903962685?text=${encodeURIComponent(waMsg)}`, "_blank");
     }
   };
 
@@ -1355,7 +1355,7 @@ function previewBuyNow() {
   }
 
   const message = buildWhatsAppMessage(id, /* includeAddons */ false);
-  window.open(`https://wa.me/918281583882?text=${encodeURIComponent(message)}`, "_blank");
+  window.open(`https://wa.me/918903962685?text=${encodeURIComponent(message)}`, "_blank");
 }
 
 // Close the modal and scroll the page to the top.
@@ -1596,12 +1596,12 @@ function setupCatalogueHandlers() {
       if (viewModeListBtn) viewModeListBtn.classList.remove("active");
     }
     try {
-      localStorage.setItem("invitestory_view_mode", mode);
+      localStorage.setItem("quvo_view_mode", mode);
     } catch(e) {}
   }
 
   try {
-    const savedMode = localStorage.getItem("invitestory_view_mode");
+    const savedMode = localStorage.getItem("quvo_view_mode");
     if (savedMode === "list") {
       setViewMode("list");
     }
@@ -1803,7 +1803,7 @@ const TESTIMONIALS = [
     name: "Rohan & Meera",
     wedding: "Mumbai · Marathi wedding",
     lang: "Hinglish",
-    quote: "Initially confused tha custom wedding invite ke baare mein, but inka ne explain kiya sample se. Got our invitestory.in link in less than a day — ekdum smooth experience."
+    quote: "Initially confused tha custom wedding invite ke baare mein, but inka ne explain kiya sample se. Got our Quvo link in less than a day — ekdum smooth experience."
   },
   {
     name: "Vivek & Sneha",
@@ -1878,7 +1878,7 @@ function setupTrustMarquee() {
 const FAQS = [
   {
     q: "What exactly do I get after I order?",
-    a: "Within 24 hours (or 12 hours if you choose the Express add-on), we hand-craft your invite with your names, dates, photos, venue map, and event timeline — and send you a private invitestory.in link that you can share with your guests on WhatsApp, email or Instagram."
+    a: "Within 24 hours (or 12 hours if you choose the Express add-on), we hand-craft your invite with your names, dates, photos, venue map, and event timeline — and send you a private Quvo invitation link that you can share with your guests on WhatsApp, email or Instagram."
   },
   {
     q: "How long does customisation take?",
@@ -1894,7 +1894,7 @@ const FAQS = [
   },
   {
     q: "Is the wedding link permanent? Will it work after the wedding?",
-    a: "Your invitestory.in link stays live for 1 year by default — long enough for any guests who couldn't attend to revisit later. We can extend it for an additional year for ₹199 if you'd like to keep the memories."
+    a: "Your Quvo invitation link stays live for 1 year by default — long enough for any guests who couldn't attend to revisit later. We can extend it for an additional year if you'd like to keep the memories."
   },
   {
     q: "Can I see a demo before I pay?",
@@ -1902,7 +1902,7 @@ const FAQS = [
   },
   {
     q: "Do you have budget options under ₹700?",
-    a: "Yes! If you are looking for simple budget-friendly single-page invitations, we have a dedicated collection at <a href=\"https://reveals.invitestory.in\" target=\"_blank\" rel=\"noopener\" class=\"gold-text\" style=\"font-weight: 600; text-decoration: underline;\">reveals.invitestory.in</a> with templates starting at just ₹699."
+    a: "Yes — browse the Classic, Premium, and Luxury designs on this page and message us on WhatsApp to get started."
   }
 ];
 
@@ -2077,8 +2077,8 @@ function setupExitIntent() {
         value: currentCurrency === "INR" ? 999 : 15,
         currency: currentCurrency
       });
-      const message = "Hi InviteStory! I'm interested in ordering a digital wedding invitation card. Please share details!";
-      window.open(`https://wa.me/918281583882?text=${encodeURIComponent(message)}`, "_blank");
+      const message = "Hi Quvo! I'm interested in ordering a digital wedding invitation card. Please share details!";
+      window.open(`https://wa.me/918903962685?text=${encodeURIComponent(message)}`, "_blank");
       hideModal();
     });
   }
@@ -2095,8 +2095,8 @@ function openCustomModal() {
 
   const waBtn = document.getElementById("custom-modal-wa-btn");
   if (waBtn) {
-    const message = `Hi InviteStory, I would like to order Exclusive Customization & Bespoke Design (starting from ${priceText}). Please share details!`;
-    waBtn.href = `https://wa.me/918281583882?text=${encodeURIComponent(message)}`;
+    const message = `Hi Quvo, I would like to order Exclusive Customization & Bespoke Design (starting from ${priceText}). Please share details!`;
+    waBtn.href = `https://wa.me/918903962685?text=${encodeURIComponent(message)}`;
     waBtn.onclick = () => {
       trackMetaEvent("Lead", {
         content_name: "Exclusive Customization Inquiry",
