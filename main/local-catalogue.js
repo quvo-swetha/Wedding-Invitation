@@ -98,34 +98,6 @@ const LOCAL_DESIGNS = [
     promise: "South Indian light, in motion."
   },
   {
-    id: 104,
-    name: "Nitin Weds Tanya",
-    image: "assets/preview/16.png",
-    tier: 2,
-    priceINR: 0,
-    priceUSD: 0,
-    demoUrl: "../extra/nitin-tanya/",
-    style: "Interactive Story",
-    accentColor: "#b08968",
-    tags: ["modern", "illustrated", "our-picks"],
-    desc: "Full interactive wedding website with events, gallery, and a tailored couple story.",
-    promise: "Your story, told in chapters."
-  },
-  {
-    id: 105,
-    name: "Arjun Preethi",
-    image: "assets/preview/16.png",
-    tier: 2,
-    priceINR: 0,
-    priceUSD: 0,
-    demoUrl: "../extra/arjun-preethi/",
-    style: "Interactive Story",
-    accentColor: "#c9a227",
-    tags: ["modern", "illustrated"],
-    desc: "A complete wedding microsite with celebrations, gallery, and guest-ready details.",
-    promise: "Polished, personal, and ready to share."
-  },
-  {
     id: 21,
     name: "Rajwada Royale",
     image: "assets/preview/18.png",
@@ -168,20 +140,6 @@ const LOCAL_DESIGNS = [
     promise: "Answer the call of a lifetime."
   },
   {
-    id: 106,
-    name: "Royal Envelope",
-    image: "assets/preview/18.png",
-    tier: 3,
-    priceINR: 0,
-    priceUSD: 0,
-    demoUrl: "../extra/royal-envelope/",
-    style: "Wax Seal Reveal",
-    accentColor: "#b8860b",
-    tags: ["royal", "cinematic"],
-    desc: "Tap-to-open envelope experience with a full wedding website behind the seal.",
-    promise: "Open the seal. Enter the celebration."
-  },
-  {
     id: 107,
     name: "Raj Weds Divya",
     image: "assets/preview/18.png",
@@ -194,20 +152,6 @@ const LOCAL_DESIGNS = [
     tags: ["royal", "traditional"],
     desc: "Interactive envelope cover leading into a complete wedding itinerary.",
     promise: "A ceremonial first impression."
-  },
-  {
-    id: 108,
-    name: "Kartik Weds Sadhna",
-    image: "assets/preview/33.png",
-    tier: 3,
-    priceINR: 0,
-    priceUSD: 0,
-    demoUrl: "../extra/kartik-sadhna/",
-    style: "Interactive Palace",
-    accentColor: "#7a3e1d",
-    tags: ["royal", "cinematic"],
-    desc: "A rich interactive wedding website with cinematic media and guest details.",
-    promise: "Luxury motion, family-ready details."
   }
 ];
 
